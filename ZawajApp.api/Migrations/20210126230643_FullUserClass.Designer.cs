@@ -59,7 +59,7 @@ namespace ZawajApp.api.Migrations
 
                     b.Property<string>("Intersts");
 
-                    b.Property<string>("KnownAs");
+                    b.Property<string>("knownAs");
 
                     b.Property<DateTime>("LastActive");
 

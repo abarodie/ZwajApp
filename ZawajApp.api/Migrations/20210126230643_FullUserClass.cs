@@ -40,12 +40,12 @@ namespace ZawajApp.api.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Intersts",
+                name: "intersts",
                 table: "Users",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "KnownAs",
+                name: "knownAs",
                 table: "Users",
                 nullable: true);
 
@@ -119,11 +119,11 @@ namespace ZawajApp.api.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "Intersts",
+                name: "intersts",
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "KnownAs",
+                name: "knownAs",
                 table: "Users");
 
             migrationBuilder.DropColumn(
