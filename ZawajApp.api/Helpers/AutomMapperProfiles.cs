@@ -16,6 +16,7 @@ namespace ZawajApp.api.Helpers
           .ForMember(destinationMember=>destinationMember.PhotoURL,opt=>{opt.MapFrom(src=>src.Photos.FirstOrDefault(p=>p.IsMain).Url);})
           .ForMember(destinationMember=>destinationMember.Age,opt=>{opt.ResolveUsing(src=>src.DateOfBirth.CalculateAge());});
           CreateMap<Photo,PhotoForDetailsDto>();
+          CreateMap<UserForUpdateDto,User>();
       }  
     }
 }
